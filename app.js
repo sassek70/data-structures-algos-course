@@ -260,11 +260,11 @@ const double = (arr) => {
     Arrays are ordered, ordering affects complexity.
 
         1. Insertion: varies. 
-            - push is constant, adds to end.  
+            - push is constant, adds to end: O(1)
             - unshift - adds to beginning of array, has to re-index all other elements. O(n)
 
         2. Removal: varies
-            - pop is constant, adds to end.  
+            - pop is constant, adds to end: O(1)
             - shift - removes from beginning of array, has to re-index all other elements. O(n)
 
         3. Access: O(1) - uses index which gives constant time. Goes direct to index, doesn't need to look at others.
