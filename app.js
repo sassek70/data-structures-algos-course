@@ -231,3 +231,59 @@ const double = (arr) => {
         1. log2(8) = 8 === 2^3 = 8
 */
 
+
+
+/* OBJECTS:
+    When ordering isn't needed, Objects are very fast, constant time
+
+        1. Insertion: O(1)
+        2. Removal: O(1)
+        3. Searching: O(n) - This is linear time, not as fast but still very fast.
+            n = number of keys in the object. 
+        4. Access: O(1)
+
+
+
+    -- OBJECT METHODS:
+        
+        1. Object.keys: O(n)
+        2. Object.values: O(n)
+        3. Object.entries: O(n)
+        4. objectName.hasOwnProperty: O(1) - returns true/false which makes it constant. Similar to Accessing a key.
+
+
+*/
+
+
+/* ARRAYS:
+
+    Arrays are ordered, ordering affects complexity.
+
+        1. Insertion: varies. 
+            - push is constant, adds to end.  
+            - unshift - adds to beginning of array, has to re-index all other elements. O(n)
+
+        2. Removal: varies
+            - pop is constant, adds to end.  
+            - shift - removes from beginning of array, has to re-index all other elements. O(n)
+
+        3. Access: O(1) - uses index which gives constant time. Goes direct to index, doesn't need to look at others.
+        4. Searching: O(n) - has to access every index.
+
+
+    -- ARRAY METHODS:
+
+        1. push: O(1)
+        2. pop: O(1)
+        3. shift: O(n)
+        4. unshift: O(n)
+        5. concat: O(n)
+        6. slice: O(n)
+        7. splice: O(n)
+        8. sort: O(n * log n)
+        9. .forEach/.map/.filter/.reduce/.etc: O(n)
+
+
+
+*/
+
